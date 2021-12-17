@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Тестовое задание для Maklai</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form-calc js-calc-form" data-calc="popup-result">
+                <div class="form-calc__group">
+                    <label for="number_1" class="form-calc__label">Введите первое число</label>
+                    <input id="number_1" type="number" class="form-calc__field js-number-1">
+                </div>
+                <div class="form-calc__group">
+                    <label for="number_2" class="form-calc__label">Введите второе число</label>
+                    <input id="number_2" type="number" class="form-calc__field js-number-2">
+                </div>
+                <div class="form-calc__group">
+                    <label for="calc" class="form-calc__label">Выберите операцию</label>
+                    <select id="calc" class="form-calc__select js-calc">
+                        <option value="default">Выберите операцию</option>
+                        <option value="plus">+</option>
+                        <option value="minus">-</option>
+                        <option value="dev">*</option>
+                        <option value="multi">/</option>
+                    </select>
+                </div>
+                <button class="form-calc__btn">Показать результат</button>
+            </form>
+        </div>
+    </div>
+    <div id="popup-result" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <span class="popup__close js-popup-close">X</span>
+                <h5 class="popup__title">Результат:</h5>
+                <div class="popup__calc-result js-calc-result"></div>
+            </div>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>
